@@ -20,8 +20,7 @@ const calculatesFarePrice = function(start, destination){
     if (ride <= 400){
         price = 0;   
     }else if (ride > 400 && ride < 2000){
-        price = Math.abs((ride-400)* 0.02) 
-
+        price = (ride-400)* 0.02
     }else if(ride > 2000 && ride <= 2500){
         price = 25
     }else if(ride > 2500){
