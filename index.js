@@ -9,11 +9,11 @@ function distanceFromHqInFeet(pickupLocation){
 }
 
 
-const distanceTravelledInFeet = function (start, destination){
+function distanceTravelledInFeet (start, destination){
     return Math.abs(start-destination) * 264
 }
 
-const calculatesFarePrice = function(start, destination){
+function calculatesFarePrice (start, destination){
     const ride = distanceTravelledInFeet(start,destination)
     let price, distance;
 
